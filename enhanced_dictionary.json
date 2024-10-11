@@ -1,0 +1,28 @@
+{
+    "S1": [
+        "Fever: high",
+        "Fever: mild",
+        "Fever: low"
+    ],
+    "S2": [
+        "Cough: low",
+        "Cough: high",
+        "Cough: mild"
+    ],
+    "S3": [
+        "Cold: high",
+        "Cold: low",
+        "Cold: mild"
+    ],
+    "S4": [
+        "Body Ache"
+    ],
+    "S5": [
+        "Cold"
+    ],
+    "S6": [
+        "Shivering: Intermittent",
+        "Shivering: mild",
+        "Shivering: high"
+    ]
+}
