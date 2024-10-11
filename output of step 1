@@ -1,0 +1,4 @@
+OUTPUT OF STEP 1:
+
+Symptom Dictionary:
+{'Symptom 1': ['Fever: mild, low, high'], 'Symptom 2': ['Cough: mild, low, high'], 'Symptom 3': ['Cold: mild, low, high']}
