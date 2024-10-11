@@ -1,0 +1,132 @@
+OUTPUT OF STEP 1:
+Symptom Dictionary:
+{'Symptom 1': ['Fever: mild, low, high'], 'Symptom 2': ['Cough: mild, low, high'], 'Symptom 3': ['Cold: mild, low, high']}
+
+
+OUTPUT OF STEP 2:
+Loss - Columns with missing data:
+Index(['SrNo', 'Patient_Id', 'Unnamed: 3', 'Unnamed: 4', 'DOB', 'Unnamed: 7',
+       'Unnamed: 8', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 13',
+       'Unnamed: 14', 'Parser ', 'Unnamed: 16', 'Unnamed: 17'],
+      dtype='object')
+
+Enhanced Symptom Dictionary with Other Symptoms included:
+Symptom 1: ['Fever: mild, low, high', 'Fever', 'Mild', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Fever', 'Mild', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Fever', 'Mild', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Fever', 'Mild', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y']
+Symptom 2: ['Cough: mild, low, high', 'Cough', 'Mild', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'Cough', 'Mild', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'Cough', 'Mild', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'Cough', 'Mild', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N']
+Symptom 3: ['Cold: mild, low, high', 'Cold', 'Mild', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'Cold', 'Mild', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'Cold', 'Mild', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'Cold', 'Mild', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N']
+Other Symptoms: {'Body Ache', 'Vertigo', 'Shivering', 'Vertigo, Nausia', 'Head Ache', 'Nausia', 'Sickness'}
+S4: {'Text'}
+S5: {'Text'}
+S6: {'Body Ache'}
+S7: {'Shivering'}
+S8: {'Head Ache'}
+S9: {'Nausia'}
+S10: {'Sickness'}
+S11: {'Vertigo'}
+S12: {'Head Ache'}
+S13: {'Nausia'}
+S14: {'Sickness'}
+S15: {'Vertigo, Nausia'}
+S16: {'Text'}
+S17: {'Text'}
+S18: {'Body Ache'}
+S19: {'Shivering'}
+S20: {'Head Ache'}
+S21: {'Nausia'}
+S22: {'Sickness'}
+S23: {'Vertigo'}
+S24: {'Head Ache'}
+S25: {'Nausia'}
+S26: {'Sickness'}
+S27: {'Vertigo, Nausia'}
+S28: {'Text'}
+S29: {'Text'}
+S30: {'Body Ache'}
+S31: {'Shivering'}
+S32: {'Head Ache'}
+S33: {'Nausia'}
+S34: {'Sickness'}
+S35: {'Vertigo'}
+S36: {'Head Ache'}
+S37: {'Nausia'}
+S38: {'Sickness'}
+S39: {'Vertigo, Nausia'}
+
+
+OUTPUT OF STEP 3:
+Columns in the DataFrame:
+['SrNo', 'Patient_Id', 'Symptoms - 1', 'Unnamed: 3', 'Unnamed: 4', 'DOB', 'Symptoms - 2', 'Unnamed: 7', 'Unnamed: 8', 'Symptoms - 3', 'Unnamed: 10', 'Unnamed: 11', 'Other Symptoms', 'Unnamed: 13', 'Unnamed: 14', 'Parser ', 'Unnamed: 16', 'Unnamed: 17']
+Required columns are missing in the DataFrame.
+
+
+OUTPUT OF STEP 4:
+Columns in the DataFrame:
+Index(['SrNo', 'Patient_Id', 'Symptoms - 1', 'Unnamed: 3', 'Unnamed: 4', 'DOB',
+       'Symptoms - 2', 'Unnamed: 7', 'Unnamed: 8', 'Symptoms - 3',
+       'Unnamed: 10', 'Unnamed: 11', 'Other Symptoms', 'Unnamed: 13',
+       'Unnamed: 14', 'Parser ', 'Unnamed: 16', 'Unnamed: 17'],
+      dtype='object')
+
+Enhanced Dictionary:
+{'S1': {'Fever: high', 'Fever: mild', 'Fever: low'}, 'S2': {'Cough: low', 'Cough: high', 'Cough: mild'}, 'S3': {'Cold: high', 'Cold: low', 'Cold: mild'}, 'S4': {'Body Ache'}, 'S5': {'Cold'}, 'S6': {'Shivering: Intermittent', 'Shivering: mild', 'Shivering: high'}}
+
+Data Sets:
+    SrNo  Patient_Id Symptoms - 1 Unnamed: 3 Unnamed: 4  DOB Symptoms - 2  \
+0    NaN         NaN        Fever        NaN        NaN  NaN        Cough   
+1    NaN         NaN         Mild        Low       High  NaN         Mild   
+2    1.0         1.0            Y          N          N  NaN            N   
+3    2.0         2.0            Y          N          N  NaN            N   
+4    3.0         3.0            Y          N          N  NaN            N   
+5    4.0         4.0            Y          N          N  NaN            N   
+6    5.0         5.0            Y          N          N  NaN            N   
+7    6.0         6.0            Y          N          N  NaN            N   
+8    7.0         7.0            Y          N          N  NaN            N   
+9    8.0         8.0            Y          N          N  NaN            N   
+10   9.0         9.0            Y          N          N  NaN            N   
+11  10.0        10.0            Y          N          N  NaN            N   
+
+   Unnamed: 7 Unnamed: 8 Symptoms - 3 Unnamed: 10 Unnamed: 11  \
+0         NaN        NaN         Cold         NaN         NaN   
+1         Low       High         Mild         Low        High   
+2           Y         Y0            N           N           Y   
+3           Y         Y0            N           N           Y   
+4           Y         Y0            N           N           Y   
+5           Y         Y0            N           N           Y   
+6           Y         Y0            N           N           Y   
+7           Y         Y0            N           N           Y   
+8           Y         Y0            N           N           Y   
+9           Y         Y0            N           N           Y   
+10          Y         Y0            N           N           Y   
+11          Y         Y0            N           N           Y   
+
+     Other Symptoms  Unnamed: 13  Unnamed: 14  Parser   \
+0              Text          NaN          NaN  Create    
+1              Text          NaN          NaN      NaN   
+2         Body Ache          NaN          NaN      NaN   
+3         Shivering          NaN          NaN      NaN   
+4         Head Ache          NaN          NaN      NaN   
+5            Nausia          NaN          NaN      NaN   
+6          Sickness          NaN          NaN      NaN   
+7           Vertigo          NaN          NaN      NaN   
+8         Head Ache          NaN          NaN      NaN   
+9            Nausia          NaN          NaN      NaN   
+10         Sickness          NaN          NaN      NaN   
+11  Vertigo, Nausia          NaN          NaN      NaN   
+
+                         Unnamed: 16                              Unnamed: 17  
+0                                NaN                                      NaN  
+1   Data Set Dictionary for Symptoms                                      NaN  
+2                                  {                                      NaN  
+3                                NaN  S1 : { Fever:mild,Fever:low,Fever:High}  
+4                                NaN   S2 : {Cough:mild,Cough:low,Cough:High}  
+5                                NaN      S3 : {Cold:mild,Cold:low:Cold:High}  
+6                                  }                                      NaN  
+7                                NaN                                      NaN  
+8                     Read Data Set                                       NaN  
+9               Create a Dictionary                                       NaN  
+10                               NaN                                      NaN  
+11                               NaN                                      NaN  
+Symptom Fever: mild not found in the dictionary.
+
+Dictionary after manual editing:
+{'S1': {'Fever: high', 'Fever: mild', 'Fever: low'}, 'S2': {'Cough: low', 'Cough: high', 'Cough: mild'}, 'S3': {'Cold: high', 'Cold: low', 'Cold: mild'}, 'S4': {'Body Ache'}, 'S5': {'Cold'}, 'S6': {'Shivering: Intermittent', 'Shivering: mild', 'Shivering: high'}}
